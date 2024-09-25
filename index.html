@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <!-- default color css  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/skins/color-1.css" disabled>
     <link rel="stylesheet" href="css/style-switcher.css">
     <!-- theme colors -->
@@ -111,7 +112,7 @@
     <!-- end -->
 
     <!-- about section  -->
-    <section class="about-section section" id="about">
+    <section class="about-section section" id="about"data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -158,7 +159,7 @@
           </div>
         </div>
         <!-- about section start -->
-        <div class="row">
+        <div class="row"data-aos="fade-up">
           <div class="about-tabs">
             <span class="tab-item outer-shadow active" data-target = ".skills">Skills</span>
             <span class="tab-item" data-target = ".experience">Acheivements</span>
@@ -167,7 +168,7 @@
         </div>
         <!-- end -->
         <!-- skill section start  -->
-        <div class="row">
+        <div class="row"data-aos="fade-up">
           <div class="skills tab-content active">
             <!-- skill item -->
             <div class="row">
@@ -245,7 +246,7 @@
         <!-- end  -->
 
         <!-- Acheivements  -->
-        <div class="row">
+        <div class="row"data-aos="fade-up">
           <div class="experience tab-content">
             <div class="row">
               <div class="timeline">
@@ -293,7 +294,7 @@
         <!--experience end -->
 
         <!-- education start -->
-        <div class="row">
+        <div class="row"data-aos="fade-up">
           <div class="education tab-content">
             <div class="row">
               <div class="timeline">
@@ -347,7 +348,7 @@
 
     <!-- ========== Start service section ========== -->
 
-    <div class="service-section section" id="services">
+    <div class="service-section section" id="services"data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -355,7 +356,7 @@
             <h2>What i do</h2>
           </div>
         </div>
-        <div class="row">
+        <div class="row"data-aos="fade-up">
           <!-- ========== Start service item ========== -->
               <div class="service-item card" data-tilt data-tilt-scale="1.1">
                 <div class="service-item-inner outer-shadow">
@@ -695,7 +696,7 @@
           </div>
         </section> -->
    
-    <section class="contact-section section" id="contact">
+    <section class="contact-section section" id="contact"data-aos="fade-up">
       <div class="container">
         <div class="row">
           <div class="section-title">
@@ -764,6 +765,10 @@
         <!-- ========== End contact from ========== -->
       </div>
     </section>
+
+    <div class="copyright"></div>
+      <p>Copyright &copy; 2024 | All rights reserved | Made with <i style="color: red;" class="fa-solid fa-heart"></i> by Ayushi Shahi</p>
+  </div>
     <!-- ========== End contact section ========== -->
 
     <!-- ========== Start portfolio popup ========== -->
@@ -854,6 +859,16 @@
         max: 25,
         speed: 300
       };
+      </script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+      <script>
+        AOS.init({
+          offset: 280,
+          duration: 1000,
+        });
       </script>
      
   </body>
